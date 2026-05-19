@@ -1,0 +1,26 @@
+# Entorno local
+.env
+venv/
+.venv/
+
+# Cache y bytecode de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc.*
+
+# Indices y artefactos generados por RAG
+index/
+
+# Logs y salidas temporales
+*.log
+*.tmp
+*.out
+
+# Configuracion local de VS Code
+.vscode/
+
+# Sistema operativo
+Thumbs.db
+.DS_Store

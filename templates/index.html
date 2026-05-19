@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>S.H.I.E.L.D. Terminal — Chat Activo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+
+    <canvas id="bg-canvas"></canvas>
+    <div class="scanlines"></div>
+
+    <div class="terminal-frame">
+
+      <!-- ── HEADER ── -->
+      <header class="header-hero">
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+
+        <div class="header-top">
+          <div class="shield-logo" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="22,2 40,12 40,30 22,42 4,30 4,12"
+                       stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <polygon points="22,9 34,16 34,26 22,35 10,26 10,16"
+                       stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.45"/>
+              <circle cx="22" cy="22" r="5" fill="none" stroke="currentColor" stroke-width="1"/>
+              <circle cx="22" cy="22" r="2" fill="currentColor"/>
+              <line x1="22" y1="2"  x2="22" y2="9"  stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+              <line x1="22" y1="35" x2="22" y2="42" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+              <line x1="4"  y1="12" x2="10" y2="16" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+              <line x1="40" y1="12" x2="34" y2="16" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+              <line x1="4"  y1="30" x2="10" y2="26" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+              <line x1="40" y1="30" x2="34" y2="26" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            </svg>
+          </div>
+
+          <div class="header-center">
+            <h1 class="glitch" data-text="S.H.I.E.L.D. DATABASE v2.0">S.H.I.E.L.D. DATABASE v2.0</h1>
+            <div class="header-sub">
+              Protocolo Híbrido: Reglas + RAG Semántico&nbsp;&nbsp;|&nbsp;&nbsp;LLM:
+              <span class="model-tag">{{ model_name }}</span>
+            </div>
+          </div>
+
+          <div class="status-block">
+            <div class="status-row">
+              <span class="status-dot"></span>
+              <span class="status-label">CONEXIÓN ACTIVA</span>
+            </div>
+            <div class="clearance">AUTORIZACIÓN NIV.7</div>
+          </div>
+        </div>
+
+        <div class="header-stats">
+          <div class="stat-item"><span class="stat-k">AGENTES</span><span class="stat-v">247</span></div>
+          <div class="stat-sep"></div>
+          <div class="stat-item"><span class="stat-k">PERIODO</span><span class="stat-v">2010 – 2020</span></div>
+          <div class="stat-sep"></div>
+          <div class="stat-item"><span class="stat-k">SERIES INDEXADAS</span><span class="stat-v">45</span></div>
+          <div class="stat-sep"></div>
+          <div class="stat-item"><span class="stat-k">ESTADO SISTEMA</span><span class="stat-v green">OPERATIVO</span></div>
+        </div>
+      </header>
+
+      <!-- ── MAIN ── -->
+      <div class="main-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+          <div class="panel">
+            <div class="panel-label">UNIVERSOS</div>
+            <div class="universe-list">
+              <div class="universe-item marvel" onclick="quick('LISTA MARVEL')">
+                <span class="u-badge">M</span>
+                <span class="u-name">MARVEL</span>
+                <span class="u-count">16</span>
+              </div>
+              <div class="universe-item dc" onclick="quick('LISTA DC')">
+                <span class="u-badge">D</span>
+                <span class="u-name">DC</span>
+                <span class="u-count">17</span>
+              </div>
+              <div class="universe-item indie" onclick="quick('LISTA INDIE')">
+                <span class="u-badge">I</span>
+                <span class="u-name">MULTIVERSO</span>
+                <span class="u-count">12</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-label">ACCESO RÁPIDO</div>
+            <div class="quick-actions">
+              <button onclick="quick('LISTA MARVEL')">▸ LISTA MARVEL</button>
+              <button onclick="quick('LISTA DC')">▸ LISTA DC</button>
+              <button onclick="quick('¿Quién es Spider-Man?')">▸ SPIDER-MAN</button>
+              <button onclick="quick('Receta de paella')">▸ TEST ESCALADO</button>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-label">SISTEMA</div>
+            <div class="sys-rows">
+              <div class="sys-row">
+                <span>CPU</span>
+                <div class="bar-track"><div class="bar-fill" style="--w:73%"></div></div>
+                <span class="sys-val">73%</span>
+              </div>
+              <div class="sys-row">
+                <span>MEM</span>
+                <div class="bar-track"><div class="bar-fill" style="--w:41%"></div></div>
+                <span class="sys-val">41%</span>
+              </div>
+              <div class="sys-row">
+                <span>NET</span>
+                <div class="bar-track"><div class="bar-fill" style="--w:88%"></div></div>
+                <span class="sys-val">88%</span>
+              </div>
+            </div>
+            <div class="uptime">UPTIME: <span id="uptime-counter">00:00:00</span></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-label">ACCIONES</div>
+            <div class="actions-grid">
+              <button class="action-btn" onclick="clearChat()" data-tooltip="Limpiar chat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2M10 11v6M14 11v6"/>
+                </svg>
+              </button>
+              <div class="action-btn empty"></div>
+              <div class="action-btn empty"></div>
+              <div class="action-btn empty"></div>
+              <div class="action-btn empty"></div>
+              <div class="action-btn empty"></div>
+              <div class="action-btn empty"></div>
+              <div class="action-btn empty"></div>
+              <div class="action-btn empty"></div>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- CHAT -->
+        <section class="chat-section">
+          <div class="chat-topbar">
+            <span class="topbar-label">CANAL SEGURO — CIFRADO AES-256</span>
+            <div class="topbar-dots">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div id="chat-container">
+            <div class="message bot">
+              <div class="msg-header">
+                <span class="agent-tag">◈ AGENTE IA</span>
+                <span class="msg-ts" data-auto-time></span>
+              </div>
+              <div class="msg-body">
+                Bienvenido, Agente. Estoy conectado a la base de datos de series animadas
+                (2010‑2020). ¿En qué puedo ayudarle hoy?
+              </div>
+            </div>
+          </div>
+
+          <div class="input-area">
+            <div id="typing-indicator" class="typing">
+              <div class="typing-dots"><span></span><span></span><span></span></div>
+              <span class="typing-label">S.H.I.E.L.D. PROCESANDO</span>
+            </div>
+
+            <div class="input-group">
+              <span class="input-prompt">&gt;_</span>
+              <input id="query-input" placeholder="Introduzca consulta clasificada…" autocomplete="off" spellcheck="false">
+              <button id="btn-send">
+                <span>ENVIAR</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /main-layout -->
+    </div><!-- /terminal-frame -->
+
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+[
+  {"titulo": "Young Justice", "año": 2010, "universo": "DC", "descripcion": "Héroes adolescentes como Dick Grayson (Robin), Wally West (Kid Flash) y Conner Kent (Superboy) forman un equipo secreto."},
+  {"titulo": "Green Lantern: The Animated Series", "año": 2011, "universo": "DC", "descripcion": "Hal Jordan y Kilowog viajan al espacio para proteger el universo como Green Lanterns."},
+  {"titulo": "Beware the Batman", "año": 2013, "universo": "DC", "descripcion": "Bruce Wayne explora sus primeros años como Batman con la ayuda de Alfred y Katana."},
+  {"titulo": "Justice League Action", "año": 2016, "universo": "DC", "descripcion": "Bruce Wayne (Batman), Clark Kent (Superman) y Diana Prince (Wonder Woman) lideran la Liga de la Justicia."},
+  {"titulo": "Harley Quinn", "año": 2019, "universo": "DC", "descripcion": "Harley Quinn (Dr. Harleen Quinzel) intenta triunfar en Gotham tras romper con el Joker."},
+  {"titulo": "Teen Titans Go!", "año": 2013, "universo": "DC", "descripcion": "Las aventuras cómicas de Robin, Starfire, Beast Boy, Raven y Cyborg."},
+  {"titulo": "Batman: The Brave and the Bold", "año": 2008, "universo": "DC", "descripcion": "Batman (Bruce Wayne) se une a otros héroes de DC en aventuras de estilo retro."},
+  {"titulo": "Young Justice: Outsiders", "año": 2019, "universo": "DC", "descripcion": "El equipo de Dick Grayson investiga el tráfico de metahumanos por la galaxia."},
+  {"titulo": "DC Super Hero Girls", "año": 2019, "universo": "DC", "descripcion": "Diana Prince, Barbara Gordon (Batgirl) y Kara Danvers (Supergirl) asisten a Metrópolis High."},
+  {"titulo": "Batman vs. Teenage Mutant Ninja Turtles", "año": 2019, "universo": "DC", "descripcion": "Bruce Wayne (Batman) se alía con las Tortugas Ninja en Gotham."},
+  {"titulo": "Superman: Unbound", "año": 2013, "universo": "DC", "descripcion": "Clark Kent (Superman) lucha contra Brainiac para salvar la ciudad de Kandor."},
+  {"titulo": "Justice League: Doom", "año": 2012, "universo": "DC", "descripcion": "Vandal Savage usa los planes de contingencia de Bruce Wayne para derrotar a la Liga de la Justicia."},
+  {"titulo": "Teen Titans: The Judas Contract", "año": 2017, "universo": "DC", "descripcion": "Los Jóvenes Titanes sufren la traición de Terra bajo el plan de Deathstroke (Slade Wilson)."},
+  {"titulo": "Batman: Under the Red Hood", "año": 2010, "universo": "DC", "descripcion": "Bruce Wayne (Batman) se enfrenta a un misterioso vigilante que resulta ser su antiguo Robin, Jason Todd."},
+  {"titulo": "The Death of Superman", "año": 2018, "universo": "DC", "descripcion": "Clark Kent (Superman) se sacrifica para detener a la imparable criatura Doomsday."},
+  {"titulo": "Lego DC Super Heroes: Justice League vs. Bizarro League", "año": 2015, "universo": "DC", "descripcion": "Batman y la Liga de la Justicia deben trabajar con sus versiones Bizarro."},
+  {"titulo": "Krypton", "año": 2018, "universo": "DC", "descripcion": "Seg-El, el abuelo de Kal-El (Superman), lucha por salvar el honor de la Casa de El."}
+]

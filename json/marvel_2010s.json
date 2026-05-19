@@ -1,0 +1,17 @@
+[
+  {"titulo": "Avengers: Earth's Mightiest Heroes", "año": 2010, "universo": "Marvel", "descripcion": "Tony Stark (Iron Man), Thor, Hulk (Bruce Banner), Ant-Man y Wasp se unen para luchar contra supervillanos."},
+  {"titulo": "Ultimate Spider-Man", "año": 2012, "universo": "Marvel", "descripcion": "Nick Fury invita a Peter Parker a entrenar con S.H.I.E.L.D. para convertirse en el Ultimate Spider-Man."},
+  {"titulo": "Avengers Assemble", "año": 2013, "universo": "Marvel", "descripcion": "Los Vengadores, liderados por Tony Stark (Iron Man), se reúnen para enfrentarse a amenazas masivas."},
+  {"titulo": "Hulk and the Agents of S.M.A.S.H.", "año": 2013, "universo": "Marvel", "descripcion": "Hulk (Bruce Banner) se une a She-Hulk (Jennifer Walters) y otros héroes gamma."},
+  {"titulo": "Guardians of the Galaxy", "año": 2015, "universo": "Marvel", "descripcion": "Peter Quill (Star-Lord), Gamora y su equipo protegen el universo de Thanos."},
+  {"titulo": "Spider-Man", "año": 2017, "universo": "Marvel", "descripcion": "Un joven Peter Parker equilibra su vida en Horizon High con su identidad secreta como Spider-Man."},
+  {"titulo": "The Spectacular Spider-Man", "año": 2008, "universo": "Marvel", "descripcion": "Peter Parker lucha contra el crimen mientras lidia con los problemas típicos de un adolescente."},
+  {"titulo": "Iron Man: Armored Adventures", "año": 2009, "universo": "Marvel", "descripcion": "Un joven Tony Stark usa su armadura tecnológica para luchar contra el Mandarin."},
+  {"titulo": "Big Hero 6: The Series", "año": 2017, "universo": "Marvel", "descripcion": "Hiro Hamada y su robot Baymax forman un equipo de superhéroes tecnológicos."},
+  {"titulo": "Marvel's Spider-Man: Maximum Venom", "año": 2020, "universo": "Marvel", "descripcion": "Peter Parker se enfrenta a una invasión de simbiontes liderada por Venom."},
+  {"titulo": "Black Panther's Quest", "año": 2018, "universo": "Marvel", "descripcion": "T'Challa (Black Panther) explora los secretos de Wakanda y su legado."},
+  {"titulo": "Lego Marvel Super Heroes: Maximum Overload", "año": 2013, "universo": "Marvel", "descripcion": "Loki causa caos y los Vengadores deben detenerlo."},
+  {"titulo": "Spider-Man: Into the Spider-Verse", "año": 2018, "universo": "Marvel", "descripcion": "Miles Morales se convierte en el nuevo Spider-Man y conoce a Peter B. Parker de otra dimensión."},
+  {"titulo": "Hulk: Where Monsters Dwell", "año": 2016, "universo": "Marvel", "descripcion": "Hulk y el Doctor Stephen Strange luchan contra pesadillas en Halloween."},
+  {"titulo": "Marvel Rising: Secret Warriors", "año": 2018, "universo": "Marvel", "descripcion": "Kamala Khan (Ms. Marvel) lidera un nuevo equipo de héroes diversos."}
+]
