@@ -22,6 +22,9 @@ Chatbot experto en series animadas de superhéroes (2010-2020) con preprocesado 
 ```powershell
 python rag_utils.py
 ```
-4. Lanzar servidor (Elegir una opción):
-   - Modo Web: `python agente_superheroes_app.py` (Abrir http://127.0.0.1:5050)
+4. Lanzar el servidor web:
+```powershell
+python agente_superheroes_app.py
+```
+Luego ir a `http://127.0.0.1:5050` en el navegador.
 
